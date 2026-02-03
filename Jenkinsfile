@@ -5,9 +5,9 @@ pipeline {
         IMAGE_NAME = "rupeshmsrit/dev"
     }
 
-    // triggers {
-    //     cron ('* * * * *')
-    // }
+    triggers {
+        cron ('* * * * *')
+    }
     
     stages {
         stage('checkout') {
